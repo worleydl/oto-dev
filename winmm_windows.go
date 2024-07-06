@@ -123,7 +123,7 @@ func (e *winmmError) Error() string {
 
 func waveOutOpen(f *waveformatex) (uintptr, error) {
 	const (
-		waveMapper   = 0xffffffff
+		waveMapper   = 0
 		callbackNull = 0
 	)
 	var w uintptr
